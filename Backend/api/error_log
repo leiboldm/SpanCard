@@ -1,0 +1,106 @@
+[18-Sep-2016 14:08:42 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:08:48 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:15:34 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:15:36 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:16:14 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 14:16:16 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 14:16:59 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:17:02 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:18:00 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:21:42 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 3
+[18-Sep-2016 14:22:02 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 14:22:02 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:23:14 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 14:23:14 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:23:57 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 14:23:57 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:24:29 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:24:29 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:25:26 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:25:26 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:26:36 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:26:36 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:26:38 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:26:38 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:27:06 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:27:06 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:27:08 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:27:08 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:30:37 America/Denver] PHP Notice:  Undefined index: HOSTNAME in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:30:37 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:30:37 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:30:54 America/Denver] PHP Notice:  Array to string conversion in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:30:54 America/Denver] PHP Notice:  Undefined index: HOSTNAME in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:30:54 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:30:54 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 11
+[18-Sep-2016 14:31:28 America/Denver] PHP Notice:  Undefined index: HOSTNAME in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:31:28 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 10
+[18-Sep-2016 14:31:28 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 11
+[18-Sep-2016 14:41:50 America/Denver] PHP Notice:  Undefined variable: KnGsk in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 14:41:50 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: FATAL:  password authentication failed for user &quot;mattleib_matt&quot;
+FATAL:  password authentication failed for user &quot;mattleib_matt&quot; in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 14:41:50 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 14:50:20 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:50:22 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:51:06 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:52:34 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:52:52 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:53:16 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:53:19 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 14:53:44 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 15:08:13 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 15:08:22 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 7
+[18-Sep-2016 15:08:31 America/Denver] PHP Warning:  Unterminated comment starting line 6 in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 6
+[18-Sep-2016 15:11:32 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 15:12:31 America/Denver] PHP Parse error:  syntax error, unexpected '$dbpassword' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 8
+[18-Sep-2016 15:13:32 America/Denver] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE), expecting function (T_FUNCTION) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 9
+[18-Sep-2016 15:13:47 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 23
+[18-Sep-2016 15:14:04 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;mattleibold_spancard&quot; does not exist in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 22
+[18-Sep-2016 15:14:04 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 23
+[18-Sep-2016 15:14:29 America/Denver] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;mattleibold_spancard&quot; does not exist in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 22
+[18-Sep-2016 15:14:29 America/Denver] PHP Warning:  pg_last_error(): No PostgreSQL link opened yet in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 23
+[18-Sep-2016 15:21:03 America/Denver] PHP Warning:  pg_fetch_all() expects exactly 1 parameter, 3 given in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 20
+[18-Sep-2016 15:21:03 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 33
+[18-Sep-2016 15:42:21 America/Denver] PHP Fatal error:  Call to undefined function exec_query() in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 18
+[18-Sep-2016 15:42:39 America/Denver] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 18
+[18-Sep-2016 15:42:41 America/Denver] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 18
+[18-Sep-2016 15:43:08 America/Denver] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 18
+[18-Sep-2016 17:16:02 America/Denver] PHP Warning:  pg_query_params(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 1: SELECT * from users WHERE username = $1
+                                  ^ in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 18
+[18-Sep-2016 17:43:16 America/Denver] PHP Warning:  pg_insert(): ERROR:  null value in column &quot;id&quot; violates not-null constraint
+ in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[18-Sep-2016 17:47:09 America/Denver] PHP Fatal error:  Call to undefined function hash_password() in /home4/mattleib/public_html/SpanCard/Backend/api/login.php on line 19
+[18-Sep-2016 18:52:41 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mattleib/public_html/SpanCard/Backend/api/logout.php on line 3
+[18-Sep-2016 18:52:50 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mattleib/public_html/SpanCard/Backend/api/logout.php on line 3
+[18-Sep-2016 18:52:52 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mattleib/public_html/SpanCard/Backend/api/logout.php on line 3
+[18-Sep-2016 18:54:02 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mattleib/public_html/SpanCard/Backend/api/logout.php on line 3
+[18-Sep-2016 18:55:31 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mattleib/public_html/SpanCard/Backend/api/logout.php on line 3
+[18-Sep-2016 20:11:12 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 7
+[18-Sep-2016 20:11:12 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 9
+[18-Sep-2016 20:11:35 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 7
+[18-Sep-2016 20:11:35 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 9
+[18-Sep-2016 20:12:18 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 10
+[18-Sep-2016 20:12:18 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 12
+[18-Sep-2016 20:13:43 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 8
+[18-Sep-2016 20:13:43 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 11
+[18-Sep-2016 20:15:06 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 8
+[18-Sep-2016 20:15:06 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 12
+[18-Sep-2016 20:16:17 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 9
+[18-Sep-2016 20:16:17 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 13
+[18-Sep-2016 20:18:46 America/Denver] PHP Notice:  Use of undefined constant url - assumed 'url' in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 21
+[18-Sep-2016 20:18:46 America/Denver] PHP Warning:  file_get_contents(url): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 21
+[18-Sep-2016 20:18:46 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
+[18-Sep-2016 20:20:36 America/Denver] PHP Notice:  Use of undefined constant url - assumed 'url' in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 12
+[18-Sep-2016 20:23:34 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 12
+[18-Sep-2016 20:23:34 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 16
+[18-Sep-2016 20:25:00 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
+[18-Sep-2016 20:27:50 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
+[18-Sep-2016 20:28:33 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 20
+[18-Sep-2016 20:28:33 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 24
+[18-Sep-2016 20:32:11 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 21
+[18-Sep-2016 20:32:11 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
+[18-Sep-2016 20:32:27 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 21
+[18-Sep-2016 20:32:27 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
+[18-Sep-2016 20:32:45 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 21
+[18-Sep-2016 20:32:45 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
