@@ -1,19 +1,25 @@
-CREATE TABLE User (
-	id INT PRIMARY KEY,
-	name STRING NOT NULL
+DROP TABLE users CASCADE;
+CREATE TABLE users(
+	id SERIAL PRIMARY KEY,
+	username TEXT NOT NULL,
+	email TEXT,
+	passwordhash TEXT,
+	salt TEXT
 );
 
-CREATE TABLE UserWord (
-	user INT references User(id),
-	word STRING NOT NULL,
+DROP TABLE user_words;
+CREATE TABLE user_words (
+	user_id INT references users(id),
+	word TEXT NOT NULL,
 	successes INT DEFAULT 0,
 	failures INT DEFAULT 0,
-	PRIMARY_KEY(user, word)
+	PRIMARY KEY (user_id, word)
 );
 
-CREATE TABLE SpanishTranslation(
-	word STRING PRIMARY KEY,
-	translation STRING NOT NULL,
-	type STRING,
-	example STRING
+DROP TABLE spanish_translations;
+CREATE TABLE spanish_translations (
+	word TEXT PRIMARY KEY,
+	translation TEXT NOT NULL,
+	type TEXT,
+	example TEXT
 );
