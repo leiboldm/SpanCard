@@ -29,7 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$data['email'] = getPost('email');
 	$res = $db->insert("users", $data);
 	$responseObject['success'] = $res;
-	$responseObject['user'] = $username;
+	$responseObject['username'] = $username;
+	$_SESSION['username'] = getPost('username');
 
 	echo json_encode($responseObject);
 } else {

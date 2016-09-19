@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	$.get(apiRoot + "login.php", function(data) {
 		var response = JSON.parse(data);
 		if (response['loggedIn'] == true) {
-			globalData['user'] = response['user'];
+			globalData['username'] = response['username'];
 			showMainPage();
 		} else {
 			showLoginWrapper();
@@ -15,26 +15,26 @@ $( document ).ready(function() {
 
 
 function showCreateAccount() {
+	$('#loginError').html("");
 	$('#loginBox').hide();
 	$('#createAccountBox').show();
 }
 
 function showLogin() {
+	$('#loginError').html("");
 	$('#createAccountBox').hide();
 	$('#loginBox').show();
 }
 
 function showLoginWrapper() {
-	$('#loader').hide();
+	hideAllContent();
 	$('#loginWrapper').show();
-	$('#mainPageWrapper').hide();
 }
 
 function showMainPage() {
-	$('#loginWrapper').hide();
+	hideAllContent();
 	$('#mainPageWrapper').show();
-	$('#loader').hide();
-	$('#welcomeMessage').html("Welcome, " + globalData['user']);
+	$('#welcomeMessage').html("Welcome, " + globalData['username']);
 }
 
 function submitLogin() {
@@ -46,7 +46,7 @@ function submitLogin() {
 			if ('message' in response) $('#loginError').html(response['message']);
 			else $('#loginError').html("An error occurred logging into your account. Please try again later.");
 		} else {
-			globalData['user'] = response['user'];
+			globalData['username'] = response['username'];
 			showMainPage();
 		}
 	});
@@ -66,7 +66,7 @@ function createAccount() {
 			if ('message' in response) $('#loginError').html(response['message']);
 			else $('#loginError').html("An error occurred creating your account. Please try again later.");
 		} else {
-			globalData['user'] = response['user'];
+			globalData['username'] = response['username'];
 			showMainPage();
 		}
 	});
@@ -83,6 +83,8 @@ function array_includes(arr, val) {
 }
 
 function lookupWord() {
+	$('#addWordSuccess').html("");
+	$('#addWordError').html("");
 	var data = $('#lookupForm').serializeObject();
 	var word = data['word'];
 	if (word.length < 1) {
@@ -117,7 +119,8 @@ function addToFlashcardSet() {
 	data['toWord'] = $('#toWord').html();
 	$.post(apiRoot + "addWord.php", data, function(data) {
 		var response = JSON.parse(data);
-		console.log(data);
+		if (response['success']) $('#addWordSuccess').html("Word added");
+		else $('#addWordError').html("Failed to add word");
 	});
 }
 
@@ -136,8 +139,72 @@ function parseNode(node) {
 	return null;
 }
 
+function hideAllContent() {
+	var children = $('#contentWrapper').children();
+	for (var i = 0; i < children.length; i++) {
+		$(children[i]).hide();
+	}
+}
+
 function startPractice() {
-	console.log("This isn't implemented yet");
+	hideAllContent();
+	$('#flashCardWrapper').show();
+	showNextFlashCardWord();
+}
+
+function toggleFlashCardButtons() {
+	$('#correctOrWrongButtons').toggle();
+	$('#showTranslationButton').toggle();
+}
+
+function loadFlashCardWords(callback) {
+	$.get(apiRoot + "flashCardWords.php", function(data) {
+		var response = JSON.parse(data);
+		if (response['success']) {
+			globalData['flashCardWords'] = response['flashCardWords'];
+			globalData['flashCardIndex'] = 0;
+		}
+		callback();
+	});
+}
+function showNextFlashCardWord() {
+	function populateData() {
+		if (globalData['flashCardIndex'] == globalData['flashCardWords'].length) {
+			alert('youre out of words');
+		} else {
+			var index = globalData['flashCardIndex']++;
+			var translation = globalData['flashCardWords'][index];
+			$('#flashCardWord').html(translation['fromWord']);
+			$('#flashCardTranslation').html(translation['toWord']);
+		}
+	}
+	$('#flashCardTranslation').hide();
+	if (!('flashCardWords' in globalData)) {
+		console.log("hi");
+		loadFlashCardWords(populateData);
+	} else {
+		populateData();
+	}
+}
+
+function showFlashCardTranslation() {
+	$('#flashCardTranslation').show();
+	toggleFlashCardButtons();
+}
+
+function getCurrentFlashCardWord() {
+	return globalData['flashCardWords'][globalData['flashCardIndex']];
+}
+
+function processResult(correct) {
+	var data = {};
+	data['correct'] = correct;
+	data['word'] = getCurrentFlashCardWord['fromWord'];
+	$.post(apiRoot + "flashCardWords.php", data, function(data) {
+		console.log(data);
+	});
+	toggleFlashCardButtons();
+	showNextFlashCardWord();
 }
 
 function logout() {

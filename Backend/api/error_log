@@ -104,3 +104,15 @@ LINE 1: SELECT * from users WHERE username = $1
 [18-Sep-2016 20:32:27 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
 [18-Sep-2016 20:32:45 America/Denver] PHP Warning:  file_get_contents(0): failed to open stream: No such file or directory in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 21
 [18-Sep-2016 20:32:45 America/Denver] PHP Warning:  DOMDocument::loadHTML(): Empty string supplied as input in /home4/mattleib/public_html/SpanCard/Backend/api/lookup.php on line 25
+[19-Sep-2016 00:39:43 America/Denver] PHP Parse error:  syntax error, unexpected '{' in /home4/mattleib/public_html/SpanCard/Backend/api/addWord.php on line 5
+[19-Sep-2016 00:40:35 America/Denver] PHP Parse error:  syntax error, unexpected '{' in /home4/mattleib/public_html/SpanCard/Backend/api/addWord.php on line 13
+[19-Sep-2016 00:44:35 America/Denver] PHP Parse error:  syntax error, unexpected ',' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 18
+[19-Sep-2016 00:45:13 America/Denver] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 16
+[19-Sep-2016 00:45:47 America/Denver] PHP Notice:  Undefined property: stdClass::$translation in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 17
+[19-Sep-2016 00:46:51 America/Denver] PHP Notice:  Undefined property: stdClass::$translation in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 17
+[19-Sep-2016 00:56:19 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[19-Sep-2016 00:56:19 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[19-Sep-2016 00:56:26 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[19-Sep-2016 00:56:26 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[19-Sep-2016 00:57:39 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[19-Sep-2016 00:57:39 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37

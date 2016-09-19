@@ -17,9 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$hash = $user[0]->passwordhash;
 		$salt = $user[0]->salt;
 		if (hashPassword($password, $salt) == $hash) {
-			$_SESSION['user'] = $username;
+			$_SESSION['username'] = $username;
 			$login_result['success'] = true;
-			$login_result['user'] = $username;
+			$login_result['username'] = $username;
 		} else {
 			$login_result["message"] = "Incorrect password";
 		}
@@ -28,9 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
 	// get whether or not the user is logged in
 	$response = array();
-	if (array_key_exists('user', $_SESSION)) {
+	if (array_key_exists('username', $_SESSION)) {
 		$response['loggedIn'] = true;
-		$response['user'] = $_SESSION['user'];
+		$response['username'] = $_SESSION['username'];
 	} else {
 		$response['loggedIn'] = false;
 	}

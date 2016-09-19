@@ -1,25 +1,26 @@
 DROP TABLE users CASCADE;
 CREATE TABLE users(
-	id SERIAL PRIMARY KEY,
-	username TEXT NOT NULL,
+	username TEXT PRIMARY KEY,
 	email TEXT,
 	passwordhash TEXT,
 	salt TEXT
 );
 
-DROP TABLE user_words;
+DROP TABLE user_words CASCADE;
 CREATE TABLE user_words (
-	user_id INT references users(id),
-	word TEXT NOT NULL,
+	username TEXT references users(username),
+	word TEXT,
 	successes INT DEFAULT 0,
 	failures INT DEFAULT 0,
-	PRIMARY KEY (user_id, word)
+	PRIMARY KEY (username, word)
 );
 
-DROP TABLE spanish_translations;
+DROP TABLE spanish_translations CASCADE;
 CREATE TABLE spanish_translations (
-	word TEXT PRIMARY KEY,
+	username TEXT references users(username),
+	word TEXT NOT NULL,
 	translation TEXT NOT NULL,
 	type TEXT,
-	example TEXT
+	example TEXT,
+	PRIMARY KEY (username, word, translation)
 );
