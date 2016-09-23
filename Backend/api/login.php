@@ -1,6 +1,6 @@
 <?php
-include "DatabaseHelper.php";
-$db = new DatabaseWrapper();
+include_once "DatabaseHelper.php";
+include_once "LoginHelpers.php";
 
 session_start();
 
@@ -8,6 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	// validate login
 	$username = $_POST['username'];
 	$password = $_POST['password'];
+	$db = new DatabaseWrapper();
 	$user = $db->exec_query('SELECT * from users WHERE username = $1', Array($username));
 	$login_result = array();
 	$login_result["success"] = false;
@@ -20,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$_SESSION['username'] = $username;
 			$login_result['success'] = true;
 			$login_result['username'] = $username;
+            setLoginCookies($username, $hash);
 		} else {
 			$login_result["message"] = "Incorrect password";
 		}
@@ -28,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
 	// get whether or not the user is logged in
 	$response = array();
-	if (array_key_exists('username', $_SESSION)) {
+	if (isLoggedIn()) {
 		$response['loggedIn'] = true;
 		$response['username'] = $_SESSION['username'];
 	} else {

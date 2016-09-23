@@ -1,5 +1,7 @@
 <?php
-include "DatabaseHelper.php";
+include_once "DatabaseHelper.php";
+include_once "LoginHelpers.php";
+
 $db = new DatabaseWrapper();
 session_start();
 
@@ -30,7 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$res = $db->insert("users", $data);
 	$responseObject['success'] = $res;
 	$responseObject['username'] = $username;
-	$_SESSION['username'] = getPost('username');
+	$_SESSION['username'] = $username;
+    setLoginCookies($username, data['passwordhash']);
 
 	echo json_encode($responseObject);
 } else {
