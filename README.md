@@ -1,7 +1,7 @@
 # SpanCard
 ## Overview
 SpanCard is a web app to help casual spanish learners to quickly generate flashcards of only words they don't already
-know so in order to maximize the efficiency of study time.
+know in order to maximize the studying efficiency.
 
 ## Motivation
 So you know a good bit of Spanish vocabulary, but you're far from knowing it all.  You want to practice with flashcards
