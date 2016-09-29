@@ -103,11 +103,11 @@ function lookupWord() {
 			if (parsedHTML[i].id == 'container') {
 				//translation = parseNode(parsedHTML[i]);
 				var translation_blocks = parseNodeV2(parsedHTML[i]);
-				if (translation_blocks.length > 1) {
+				if (translation_blocks.length > 0) {
 					translation = "";
 					translation_blocks[0].forEach(function(t) {
 						translation += (t['translation'].replace('\n', ' ') + "<br><i>ex: " + t['example'] + "</i><br>");
-					})
+					});
 				}
 				console.log(translation);
 			}
@@ -197,6 +197,11 @@ function parseNodeV2(node) {
 			current_tranny['example'] = getTextContent(exampleElt);
 		}
 	}
+	if (current_tranny['translation']) {
+		current_tranny['translation'] = current_tranny['translation'].join(',\n');
+		trannies.push(current_tranny);
+	}
+	tranny_blocks.push(trannies);
 	console.log(tranny_blocks);
 	return tranny_blocks;
 }
