@@ -70,11 +70,12 @@
 				<button id="correct" onclick="processResult(true);">I got it correct</button>
 				<button id="wrong" onclick="processResult(false);">I got it wrong</button>
 			</div>
+			<br><button onclick="showMainPage()">Back to lookup</button>
 		</div>
 	</div>
 	<footer id="footer">
 		<div id="footerContent">
-			<a href="javascript:logout()">logout</a>
+			<button onclick="logout()">logout</button>
 		</div>
 	</footer>
 </body>

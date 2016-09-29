@@ -174,3 +174,41 @@ LINE 1: SELECT * from users WHERE username = $1
 [23-Sep-2016 00:24:09 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32
 [23-Sep-2016 00:24:09 America/Denver] PHP Warning:  Missing argument 2 for hashPassword(), called in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32 and defined in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 36
 [23-Sep-2016 00:24:09 America/Denver] PHP Notice:  Undefined variable: salt in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 37
+[24-Sep-2016 00:49:01 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 14
+[24-Sep-2016 00:49:01 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 15
+[24-Sep-2016 00:49:01 America/Denver] PHP Notice:  Undefined variable: user_id in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 16
+[24-Sep-2016 00:49:09 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 31
+[24-Sep-2016 00:49:09 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32
+[24-Sep-2016 00:49:09 America/Denver] PHP Warning:  Missing argument 2 for hashPassword(), called in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32 and defined in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 36
+[24-Sep-2016 00:49:09 America/Denver] PHP Notice:  Undefined variable: salt in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 37
+[28-Sep-2016 09:59:53 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 14
+[28-Sep-2016 09:59:53 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 15
+[28-Sep-2016 09:59:53 America/Denver] PHP Notice:  Undefined variable: user_id in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 16
+[28-Sep-2016 10:00:00 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 31
+[28-Sep-2016 10:00:00 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32
+[28-Sep-2016 10:00:00 America/Denver] PHP Warning:  Missing argument 2 for hashPassword(), called in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32 and defined in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 36
+[28-Sep-2016 10:00:00 America/Denver] PHP Notice:  Undefined variable: salt in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 37
+[28-Sep-2016 10:00:20 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:20 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 10:00:26 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:26 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 10:00:29 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:29 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 10:00:33 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:33 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 10:00:40 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:40 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 10:00:44 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:44 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 10:00:48 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[28-Sep-2016 10:00:48 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[28-Sep-2016 11:24:02 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 14
+[28-Sep-2016 11:24:02 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 15
+[28-Sep-2016 11:24:02 America/Denver] PHP Notice:  Undefined variable: user_id in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 16
+[29-Sep-2016 00:54:21 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 14
+[29-Sep-2016 00:54:21 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 15
+[29-Sep-2016 00:54:21 America/Denver] PHP Notice:  Undefined variable: user_id in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 16
+[29-Sep-2016 00:54:25 America/Denver] PHP Notice:  Undefined variable: userIdCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 31
+[29-Sep-2016 00:54:25 America/Denver] PHP Notice:  Undefined variable: userHashCookie in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32
+[29-Sep-2016 00:54:25 America/Denver] PHP Warning:  Missing argument 2 for hashPassword(), called in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 32 and defined in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 36
+[29-Sep-2016 00:54:25 America/Denver] PHP Notice:  Undefined variable: salt in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 37
