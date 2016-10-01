@@ -33,8 +33,4 @@ class DatabaseWrapper {
 	}
 }
 
-function hashPassword($password, $salt) {
-	return hash('sha256', $password . $salt);
-}
-
 ?>

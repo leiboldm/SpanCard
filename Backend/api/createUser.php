@@ -26,14 +26,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$salt = generateRandomString(16);
 	$data = array();
 	$data['username'] = $username;
-	$data['passwordhash'] = hashPassword(getPost('password'), $salt);
+	$data['passwordhash'] = LoginHelpers::hashPassword(getPost('password'), $salt);
 	$data['salt'] = $salt;
 	$data['email'] = getPost('email');
 	$res = $db->insert("users", $data);
 	$responseObject['success'] = $res;
 	$responseObject['username'] = $username;
 	$_SESSION['username'] = $username;
-    setLoginCookies($username, data['passwordhash']);
+    LoginHelpers::setLoginCookies($username, data['passwordhash']);
 
 	echo json_encode($responseObject);
 } else {

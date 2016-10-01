@@ -17,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	} else {
 		$hash = $user[0]->passwordhash;
 		$salt = $user[0]->salt;
-		if (hashPassword($password, $salt) == $hash) {
+		if (LoginHelpers::hashPassword($password, $salt) == $hash) {
 			$_SESSION['username'] = $username;
 			$login_result['success'] = true;
 			$login_result['username'] = $username;
-            setLoginCookies($username, $hash);
+            LoginHelpers::setLoginCookies($username, $hash);
 		} else {
 			$login_result["message"] = "Incorrect password";
 		}
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
 	// get whether or not the user is logged in
 	$response = array();
-	if (isLoggedIn()) {
+	if (LoginHelpers::isLoggedIn()) {
 		$response['loggedIn'] = true;
 		$response['username'] = $_SESSION['username'];
 	} else {
