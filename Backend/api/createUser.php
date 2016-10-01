@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$responseObject['success'] = $res;
 	$responseObject['username'] = $username;
 	$_SESSION['username'] = $username;
-    LoginHelpers::setLoginCookies($username, data['passwordhash']);
+    LoginHelpers::setLoginCookies($username, $data['passwordhash']);
 
 	echo json_encode($responseObject);
 } else {
