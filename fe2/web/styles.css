@@ -107,3 +107,16 @@ form {
 .card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.title {
+  padding-left: 16px;
+  padding-right: 16px;
+}
