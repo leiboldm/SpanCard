@@ -48,7 +48,7 @@
 			<div id="welcomeMessage">Welcome to SpanCard!</div>
 			<div id="lookupHolder">
 				<form id="lookupForm" onsubmit="return lookupWord();">
-					<label for="word">Lookup word</label><br>
+					<label for="word">Lookup spanish word</label><br>
 					<input type="text" name="word" required><br>
 					<input type="submit" value="Lookup">
 				</form>

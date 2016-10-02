@@ -274,3 +274,11 @@ LINE 1: SELECT * from users WHERE username = $1
 [01-Oct-2016 12:08:47 America/Denver] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 24
 [01-Oct-2016 12:09:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home4/mattleib/public_html/SpanCard/Backend/api/LoginHelpers.php on line 24
 [01-Oct-2016 12:13:12 America/Denver] PHP Parse error:  syntax error, unexpected '[' in /home4/mattleib/public_html/SpanCard/Backend/api/createUser.php on line 36
+[01-Oct-2016 12:27:26 America/Denver] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[01-Oct-2016 12:28:18 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[01-Oct-2016 12:28:18 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[01-Oct-2016 12:32:21 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[01-Oct-2016 12:32:23 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[01-Oct-2016 12:32:33 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[01-Oct-2016 12:34:51 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[01-Oct-2016 12:47:38 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34

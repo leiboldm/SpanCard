@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 		" FROM user_words JOIN spanish_translations " .
 		"ON user_words.username = spanish_translations.username " .
 		"AND user_words.word = spanish_translations.word WHERE user_words.username = $1" .
-		" ORDER BY user_words.successes ASC LIMIT 1000", array($username));
+		" ORDER BY user_words.successes ASC LIMIT 30", array($username));
 
 	$translationMap = array();
 	foreach ($words as $word) {
@@ -34,9 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 	$word = $_POST['word'];
 	$username = $_SESSION['username'];
 	$success = $_POST['correct'];
-	if (success)
-		$db->exec_query("UPDATE user_words SET successes = successes + 1 WHERE word = $1 AND username = $2", array($word, $username));
-	else $db->exec_query("UPDATE user_words SET failures = failures + 1 WHERE word = $1 AND username = $2", array($word, $username));
+	$update = "failures = failures + 1";
+	if ($success) $update = "successes = successes + 1";
+	$db->exec_query("UPDATE user_words SET $update WHERE word = $1 AND username = $2", 
+		array($word, $username));
 }
 echo json_encode($response);
 ?>
