@@ -7,6 +7,7 @@ import 'package:fe2/service/service.dart';
 import 'package:fe2/utils/app_state.dart';
 import 'dart:html';
 import 'dart:convert';
+import 'package:fe2/components/min.dart';
 
 @Component(
     selector: 'my-app',
@@ -15,29 +16,6 @@ import 'dart:convert';
 @RouteConfig(const [
   const Route(path: 'login', name: 'Login', component: LoginComponent),
   const Route(path: 'create_user', name: 'CreateUser', component: CreateUserComponent),
-  const Route(path: 'lookup', name: 'Lookup', component: LookupComponent)
+  const Route(path: 'lookup', name: 'Lookup', component: LookupComponent, useAsDefault: true)
 ])
-class AppComponent {
-  Router _router;
-  AppState _appState;
-  bool get loggedIn => _appState.isLoggedIn;
-
-  AppComponent(this._router, this._appState) {
-    sendGetRequest('login.php').then((String data) {
-      var resp = JSON.decode(data);
-      _appState.isLoggedIn = resp['loggedIn'];
-      if (resp['loggedIn'] == true) {
-        _router.navigate(['Lookup']);
-      } else {
-        _router.navigate(['Login']);
-      }
-    });
-  }
-
-  logout() {
-    sendGetRequest('logout.php').then((String data) {
-      _appState.isLoggedIn = false;
-      _router.navigate(['Login']);
-    });
-  }
-}
+class AppComponent {}
