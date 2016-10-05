@@ -8,7 +8,15 @@
   </form>
 </div>
 <div id="translationWrapper" *ngIf="translations.isNotEmpty">
-  <span>{{ word }}</span>: <span> {{ toWord }}</span><br>
+  <div class="translations">
+    <div *ngFor="let translation of translations.first">
+      <div>
+        <span class="fromWord"> {{ translation['fromWord'] }}: </span>
+        <span class="translation">{{ translation['translation'] }}</span>
+      </div>
+      <div class="example-text">{{ translation['example'] }}</div>
+    </div>
+  </div>
   <button (click)="addToFlashcardSet()">Add to flashcard set</button>
   <span class="error">{{ addWordErrorMessage }}</span>
   <span class="sucess">{{ addWordSuccessMessage }}</span>

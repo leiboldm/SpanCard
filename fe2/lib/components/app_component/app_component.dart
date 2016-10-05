@@ -7,7 +7,6 @@ import 'package:fe2/service/service.dart';
 import 'package:fe2/utils/app_state.dart';
 import 'dart:html';
 import 'dart:convert';
-import 'package:fe2/components/min.dart';
 
 @Component(
     selector: 'my-app',

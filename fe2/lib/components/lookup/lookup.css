@@ -1,0 +1,14 @@
+.example-text {
+  color: #888;
+  font-size: 80%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.translation {
+  font-weight: bold;
+}
+
+.translations {
+  text-align: left;
+}
