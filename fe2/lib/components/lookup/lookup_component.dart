@@ -15,9 +15,7 @@ external String parseTranslationData(String);
     directives: const [HeaderComponent])
 class LookupComponent {
   String word = "";
-  String fromWord = "";
   List translations = [];
-  String toWord = "";
   final Router _router;
   String addWordErrorMessage = "";
   String addWordSuccessMessage = "";
@@ -25,21 +23,34 @@ class LookupComponent {
   LookupComponent(this._router);
 
   lookupWord() {
+    addWordSuccessMessage = "";
+    addWordErrorMessage = "";
     getTranslationPage(word).then((String data) {
       String parsed = parseTranslationData(data);
       translations = JSON.decode(parseTranslationData(data));
-      if (translations.isNotEmpty) {
-        fromWord = translations.first.first['fromWord'];
-        toWord = translations.first.first['translation'];
-      }
     });
   }
 
   addToFlashcardSet() {
-    print('add to flash card set');
+    assert(translations.isNotEmpty);
+    Map<String, String> data = {
+      'fromWord': translations.first.first['fromWord'],
+      'toWord': translations.first.first['translation']
+    };
+    print(data);
+    addWordSuccessMessage = "";
+    addWordErrorMessage = "";
+    sendPostRequest("addWord.php", data).then((resp) {
+      Map response = JSON.decode(resp);
+      if (response['success']) {
+        addWordSuccessMessage = "Flashcard added.";
+      } else {
+        addWordErrorMessage = "Error adding flashcard.  Please try again later.";
+      }
+    });
   }
 
   startPractice() {
-    print('start practice');
+    _router.navigate(['Practice']);
   }
 }

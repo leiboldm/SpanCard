@@ -109,3 +109,9 @@ form {
   padding-left: 16px;
   padding-right: 16px;
 }
+
+.flashcard {
+  margin: 16px;
+  border: 1px solid #888;
+  background: #eee;
+}

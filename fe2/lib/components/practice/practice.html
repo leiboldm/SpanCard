@@ -1,0 +1,21 @@
+<spancard-header></spancard-header>
+<div *ngIf="currentCard != null" class="card-3 flashcard">
+  <span *ngIf="cardDeck.hasCards()">
+    Flashcard {{ cardDeck.currentIndex + 1 }}/{{ cardDeck.cards.length }}:
+  </span><br>
+  <span class="fromWord"> {{ currentCard.fromWord }}</span><br>
+  <span class="toWord" *ngIf="translationVisible" [innerHTML]="currentCard.toWord"></span><br>
+  <button *ngIf="!translationVisible"
+    (click)="translationVisible = true">Show translation</button>
+  <div *ngIf="translationVisible">
+    <button (click)="processResult(true)">I got it correct</button>
+    <button (click)="processResult(false)">I got it wrong</button>
+  </div>
+</div>
+<div *ngIf="loadingCards">
+  Loading flashcards ...
+</div>
+<div *ngIf="loadCardsErrorMessage != null">
+  {{ loadCardsErrorMessage }}
+</div>
+<button (click)="showMainPage()">Back to lookup</button>
