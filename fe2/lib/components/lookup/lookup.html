@@ -1,1 +1,24 @@
-Lookup!
+<spancard-header></spancard-header>
+<div id="welcomeMessage">Welcome to SpanCard!</div>
+<div id="lookupHolder">
+  <form id="lookupForm" (ngSubmit)="lookupWord()">
+    <label for="word">Lookup spanish word</label><br>
+    <input type="text" [(ngModel)]="word" required><br>
+    <input type="submit" value="Lookup">
+  </form>
+</div>
+<div id="translationWrapper" *ngIf="translations.isNotEmpty">
+  <div class="translations">
+    <div *ngFor="let translation of translations.first">
+      <div>
+        <span class="fromWord"> {{ translation['fromWord'] }}: </span>
+        <span class="translation">{{ translation['translation'] }}</span>
+      </div>
+      <div class="example-text">{{ translation['example'] }}</div>
+    </div>
+  </div>
+  <button (click)="addToFlashcardSet()">Add to flashcard set</button>
+  <span class="error">{{ addWordErrorMessage }}</span>
+  <span class="success">{{ addWordSuccessMessage }}</span>
+</div>
+<button (click)="startPractice()">Practice with flashcards</button>

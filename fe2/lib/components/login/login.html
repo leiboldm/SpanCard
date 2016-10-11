@@ -1,13 +1,14 @@
-<span class="error" id="loginError"></span>
+<spancard-header></spancard-header>
+<span class="error" id="loginError">{{ errorMessage }}</span>
 <div id="loginBox">
-  <form id="loginForm" onsubmit="return submitLogin();">
+  <form id="loginForm" (ngSubmit)="submitLogin()">
     <label for="username">Username </label><br>
-    <input type="text" name="username" required><br>
+    <input type="text" [(ngModel)]="username" required><br>
     <label for="password">Password </label><br>
-    <input type="password" name="password" required><br>
+    <input type="password" [(ngModel)]="password" required><br>
     <input type="submit" value="Login">
   </form>
 
   <span>You need an account to use SpanCard. Create one now, it only takes 15 seconds.</span><br>
-  <button onclick="showCreateAccount();">Create account</button>
+  <button (click)="showCreateAccount($event)">Create account</button>
 </div>

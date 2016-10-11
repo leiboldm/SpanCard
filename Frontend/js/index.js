@@ -6,7 +6,6 @@ $( document ).ready(function() {
 		var response = JSON.parse(data);
 		if (response['loggedIn'] == true) {
 			globalData['username'] = response['username'];
-			globalData['cardSet'] = new FlashCardSet();
 			showMainPage();
 		} else {
 			showLoginWrapper();
@@ -248,24 +247,25 @@ function loadFlashCardWords(callback) {
 	$.get(apiRoot + "flashCardWords.php", function(data) {
 		var response = JSON.parse(data);
 		if (response['success']) {
-			globalData.cardSet.cards = response['flashCardWords'];
-			globalData.cardSet.currentIndex = 0;
+			globalData['flashCardWords'] = response['flashCardWords'];
+			globalData['flashCardIndex'] = 0;
 		}
 		callback();
 	});
 }
 function showNextFlashCardWord() {
 	function populateData() {
-		if (globalData.cardSet.currentIndex == globalData.cardSet.cards.length) {
+		if (globalData['flashCardIndex'] == globalData['flashCardWords'].length) {
 			alert('youre out of words');
 		} else {
-			var translation = globalData.cardSet.getNextCard();
+			var index = globalData['flashCardIndex']++;
+			var translation = globalData['flashCardWords'][index];
 			$('#flashCardWord').html(translation['fromWord']);
 			$('#flashCardTranslation').html(translation['toWord']);
 		}
 	}
 	$('#flashCardTranslation').hide();
-	if (globalData.cardSet.currentIndex == null) {
+	if (!('flashCardWords' in globalData)) {
 		console.log("hi");
 		loadFlashCardWords(populateData);
 	} else {
@@ -279,17 +279,15 @@ function showFlashCardTranslation() {
 }
 
 function getCurrentFlashCardWord() {
-	//return globalData['flashCardWords'][globalData['flashCardIndex']]['fromWord'];
-	return globalData.cardSet.getCurrentCard();
+	return globalData['flashCardWords'][globalData['flashCardIndex']];
 }
 
 function processResult(correct) {
 	var data = {};
 	data['correct'] = correct;
-	data['word'] = globalData.cardSet.getCurrentCard().fromWord;
-	console.log(data);
-	$.post(apiRoot + "flashCardWords.php", data, function(response) {
-		console.log(response);
+	data['word'] = getCurrentFlashCardWord['fromWord'];
+	$.post(apiRoot + "flashCardWords.php", data, function(data) {
+		console.log(data);
 	});
 	toggleFlashCardButtons();
 	showNextFlashCardWord();
@@ -336,21 +334,3 @@ jQuery.fn.serializeObject = function() {
   return objectData;
 };
 
-function FlashCardSet() {
-	this.cards = [];
-	this.currentIndex = null;
-	this.getCurrentCard = function()  {
-		if (this.currentIndex != null) {
-			return this.cards[this.currentIndex];
-		} else return null;
-	}
-
-	this.getNextCard = function() {
-		++this.currentIndex;
-		if (this.currentIndex == this.cards.length) {
-			return null;
-		} else {
-			return this.cards[this.currentIndex];
-		}
-	}
-}
