@@ -26,7 +26,7 @@ class FlashcardSet {
   registerResult(bool success) {
     successes += success ? 1 : 0;
     Map data = {
-      'correct': success,
+      'correct': success ? 'true' : 'false',
       'word': cards[currentIndex].fromWord
     };
     sendPostRequest("flashCardWords.php", data).then((r) {
