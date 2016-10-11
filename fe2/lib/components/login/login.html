@@ -1,14 +1,32 @@
 <spancard-header></spancard-header>
-<span class="error" id="loginError">{{ errorMessage }}</span>
-<div id="loginBox">
-  <form id="loginForm" (ngSubmit)="submitLogin()">
-    <label for="username">Username </label><br>
-    <input type="text" [(ngModel)]="username" required><br>
-    <label for="password">Password </label><br>
-    <input type="password" [(ngModel)]="password" required><br>
-    <input type="submit" value="Login">
-  </form>
+<div *ngIf="loginVisible">
+  <span class="error">{{ loginErrorMessage }}</span>
+  <div id="loginBox">
+    <form id="loginForm" (ngSubmit)="submitLogin()">
+      <label for="username">Username </label><br>
+      <input type="text" [(ngModel)]="username" required><br>
+      <label for="password">Password </label><br>
+      <input type="password" [(ngModel)]="password" required><br>
+      <input type="submit" value="Login">
+    </form>
 
-  <span>You need an account to use SpanCard. Create one now, it only takes 15 seconds.</span><br>
-  <button (click)="showCreateAccount($event)">Create account</button>
+    <span>You need an account to use SpanCard. Create one now, it only takes 15 seconds.</span><br>
+    <button (click)="showCreateAccount()">Create account</button>
+  </div>
+</div>
+<div *ngIf="!loginVisible">
+  <span class="error">{{ createAccountErrorMessage }}</span>
+  <form id="createAccountForm" (ngSubmit)="createAccount()">
+    <label for="create_username">Pick a username </label><br>
+    <input type="text" [(ngModel)]="create_username" required><br>
+    <label for="create_password">Pick a password </label><br>
+    <input type="password" [(ngModel)]="create_password" required><br>
+    <label for="create_password2">Verify password </label><br>
+    <input type="password" [(ngModel)]="create_password2" required><br>
+    <label for="create_email">Email (optional)</label><br>
+    <input type="email" [(ngModel)]="create_email"><br>
+    <input type="submit" value="Create Account">
+  </form>
+  <span>Already have an account?</span><br>
+  <button (click)="showLogin()">Login now</button>
 </div>

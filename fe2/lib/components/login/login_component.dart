@@ -14,9 +14,15 @@ import 'dart:html';
 class LoginComponent {
   String username;
   String password;
-  String errorMessage = "";
+  String loginErrorMessage = "";
+  String createAccountErrorMessage = "";
   final Router _router;
   AppState _appState;
+  String create_username;
+  String create_password;
+  String create_password2;
+  String create_email;
+  bool loginVisible = true;
 
   LoginComponent(this._router, this._appState);
 
@@ -26,16 +32,48 @@ class LoginComponent {
     sendPostRequest("login.php", data).then((String responseText) {
       Map responseData = JSON.decode(responseText);
       if (responseData['success']) {
-        _appState.isLoggedIn = true;
-        _appState.username = responseData['username'];
-        _router.navigate(['Lookup']);
+        _loginSuccessCallback(responseData['username']);
       } else {
-        errorMessage = responseData['message'];
+        loginErrorMessage = responseData['message'];
       }
     });
   }
 
-  showCreateAccount(event) {
-    _router.navigate(['CreateUser']);
+  createAccount() {
+    if (create_password != create_password2) {
+      createAccountErrorMessage = 'Passwords are not the same';
+      return;
+    } else if (create_password.length < 4){
+      createAccountErrorMessage = 'Password must be more than 3 characters';
+      return;
+    }
+    Map<String, String> data = {
+      "username": create_username,
+      "password": create_password,
+      "email": create_email ?? ''
+    };
+    print(data);
+    sendPostRequest("createUser.php", data).then((String responseText) {
+      Map responseData = JSON.decode(responseText);
+      if (responseData['success']) {
+        _loginSuccessCallback(responseData['username']);
+      } else {
+        createAccountErrorMessage = responseData["message"] ?? 'Error occurred';
+      }
+    });
+  }
+
+  _loginSuccessCallback(String username) {
+    _appState.isLoggedIn = true;
+    _appState.username = username;
+    _router.navigate(['Lookup']);
+  }
+
+  showCreateAccount() {
+    loginVisible = false;
+  }
+
+  showLogin() {
+    loginVisible = true;
   }
 }
