@@ -37,7 +37,6 @@ class LookupComponent {
       'fromWord': translations.first.first['fromWord'],
       'toWord': translations.first.first['translation']
     };
-    print(data);
     addWordSuccessMessage = "";
     addWordErrorMessage = "";
     sendPostRequest("addWord.php", data).then((resp) {
