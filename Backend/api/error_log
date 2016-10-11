@@ -282,3 +282,85 @@ LINE 1: SELECT * from users WHERE username = $1
 [01-Oct-2016 12:32:33 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
 [01-Oct-2016 12:34:51 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
 [01-Oct-2016 12:47:38 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:05:04 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:05:04 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:09:53 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:09:53 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:09:59 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:09:59 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:09 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:09 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:12 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:12 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:16 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:16 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:20 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:20 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:26 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:26 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:34 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:34 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:37 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:37 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:39 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:39 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:42 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:42 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:44 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:44 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:46 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:46 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:50 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:50 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:10:54 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:10:54 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:20 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:20 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:23 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:23 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:27 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:27 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:30 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:30 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:34 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:34 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:38 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:38 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:40 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:40 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:41 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:41 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:43 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:43 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:45 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:45 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:48 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:48 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:49 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:49 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:51 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:51 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:54 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:54 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:14:59 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:14:59 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:15:06 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:15:06 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[06-Oct-2016 01:19:10 America/Denver] PHP Notice:  Undefined index: word in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 34
+[06-Oct-2016 01:19:10 America/Denver] PHP Notice:  Undefined index: correct in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 36
+[08-Oct-2016 00:57:03 America/Denver] PHP Notice:  Undefined index: fromWord in /home4/mattleib/public_html/SpanCard/Backend/api/addWord.php on line 6
+[08-Oct-2016 00:57:03 America/Denver] PHP Notice:  pg_insert(): Detected NULL for 'NOT NULL' field 'word' in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[08-Oct-2016 00:57:03 America/Denver] PHP Notice:  pg_insert(): Expects NULL, string, long or double value for PostgreSQL 'text' (word) in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:09:34 America/Denver] PHP Notice:  Undefined index: fromWord in /home4/mattleib/public_html/SpanCard/Backend/api/addWord.php on line 6
+[11-Oct-2016 00:09:34 America/Denver] PHP Notice:  pg_insert(): Detected NULL for 'NOT NULL' field 'word' in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:09:34 America/Denver] PHP Notice:  pg_insert(): Expects NULL, string, long or double value for PostgreSQL 'text' (word) in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:10:03 America/Denver] PHP Notice:  Undefined index: fromWord in /home4/mattleib/public_html/SpanCard/Backend/api/addWord.php on line 6
+[11-Oct-2016 00:10:03 America/Denver] PHP Notice:  pg_insert(): Detected NULL for 'NOT NULL' field 'word' in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:10:03 America/Denver] PHP Notice:  pg_insert(): Expects NULL, string, long or double value for PostgreSQL 'text' (word) in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:12:40 America/Denver] PHP Notice:  Undefined index: fromWord in /home4/mattleib/public_html/SpanCard/Backend/api/addWord.php on line 8
+[11-Oct-2016 00:12:40 America/Denver] PHP Notice:  pg_insert(): Detected NULL for 'NOT NULL' field 'word' in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:12:40 America/Denver] PHP Notice:  pg_insert(): Expects NULL, string, long or double value for PostgreSQL 'text' (word) in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:41:54 America/Denver] PHP Warning:  pg_insert(): ERROR:  duplicate key value violates unique constraint &quot;users_pkey&quot;
+ in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28
+[11-Oct-2016 00:42:12 America/Denver] PHP Warning:  pg_insert(): ERROR:  duplicate key value violates unique constraint &quot;users_pkey&quot;
+ in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 28

@@ -33,13 +33,14 @@ class LoginHelpers {
 
     public static function setLoginCookies($username, $hash) {
         $cookieExpiration = time() + 86400 * 365;
-        setcookie(self::userIdCookie, $username, $cookieExpiration, "/");
-        setcookie(self::userHashCookie, self::hashPassword($hash, $username), $cookieExpiration, "/");
+        $host = $_SERVER['HTTP_HOST'];
+        setcookie(self::userIdCookie, $username, $cookieExpiration, "/", null);
+        setcookie(self::userHashCookie, self::hashPassword($hash, $username), $cookieExpiration, "/", null);
     }
 
     public static function unsetLoginCookies() {
-        setcookie(self::userIdCookie, "", time() - 3600);
-        setcookie(self::userHashCookie, "", time() - 3600);
+        setcookie(self::userIdCookie, "", time() - 3600, "/", null);
+        setcookie(self::userHashCookie, "", time() - 3600, "/", null);
     }
 
     public static function hashPassword($password, $salt) {

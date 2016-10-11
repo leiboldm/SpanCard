@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (count($existingUser) > 0) {
 		$responseObject['message'] = "Username already taken";
 		echo json_encode($responseObject);
+        exit();
 	}
 
 	$salt = generateRandomString(16);
