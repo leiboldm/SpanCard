@@ -33,10 +33,18 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 } else {
 	$word = $_POST['word'];
 	$username = $_SESSION['username'];
-	$success = $_POST['correct'];
+	$success = $_POST['correct'] == 'true';
+    $res = '';
 	if (success)
-		$db->exec_query("UPDATE user_words SET successes = successes + 1 WHERE word = $1 AND username = $2", array($word, $username));
-	else $db->exec_query("UPDATE user_words SET failures = failures + 1 WHERE word = $1 AND username = $2", array($word, $username));
+		$res = $db->exec_query("UPDATE user_words SET successes = successes + 1" .
+            " WHERE word = $1 AND username = $2", 
+            array($word, $username));
+        
+	else
+        $res = $db->exec_query("UPDATE user_words SET failures = failures + 1" .
+            " WHERE word = $1 AND username = $2", 
+            array($word, $username));
+    $response['success'] = $res == [];
 }
 echo json_encode($response);
 ?>

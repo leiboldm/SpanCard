@@ -1,1 +1,15 @@
 
+[11-Oct-2016 00:54:06 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[11-Oct-2016 00:54:15 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[11-Oct-2016 00:55:06 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[11-Oct-2016 00:55:08 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 37
+[11-Oct-2016 00:56:33 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[11-Oct-2016 00:56:40 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[11-Oct-2016 00:57:01 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[11-Oct-2016 00:57:20 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[11-Oct-2016 00:57:20 America/Denver] PHP Warning:  pg_query_params(): Query failed: ERROR:  relation &quot;uiser_words&quot; does not exist
+LINE 1: UPDATE uiser_words SET successes = successes + 1 WHERE word ...
+               ^ in /home4/mattleib/public_html/SpanCard/Backend/api/DatabaseHelper.php on line 18
+[11-Oct-2016 01:00:56 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[11-Oct-2016 01:01:01 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
+[11-Oct-2016 01:01:06 America/Denver] PHP Notice:  Use of undefined constant success - assumed 'success' in /home4/mattleib/public_html/SpanCard/Backend/api/flashCardWords.php on line 38
